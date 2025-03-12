@@ -20,7 +20,6 @@ export function LivenessQuickStartReact() {
           throw new Error(`Error fetching session ID: ${response.statusText}`);
         }
         const data = await response.json();
-      
         setCreateLivenessApiData(data);
       } catch (error) {
         console.error('Error fetching session ID:', error);
